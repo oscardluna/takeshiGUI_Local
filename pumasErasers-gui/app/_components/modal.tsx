@@ -45,12 +45,12 @@ const textstyle = {
 }
 
 
-export function MyModal({ isOpen = false, onClose, modalString = ""}) {
+export function MyModal({ isOpen, onClose, modalString = ""}) {
       
     return (
         <>
             <Modal
-                open={true}
+                open={false}         // for debugging with HSR change to isOpen
                 onClose={onClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
@@ -65,16 +65,7 @@ export function MyModal({ isOpen = false, onClose, modalString = ""}) {
                         {modalString}
     </Typography>*/}
                     <Box sx={{...textstyle,maxHeight: "75%"}}>
-                    Picking up luggage, please stay where you are \n
-
-                    Picking up luggage, please stay where you are 2
-                    Picking up luggage, please stay where you are 3 
-                    Picking up luggage, please stay where you are 4 
-                    Picking up luggage, please stay where you are 5 
-                    Picking up luggage, please stay where you are 6
-                    Picking up luggage, please stay where you are 7
-                    Picking up luggage, please stay where you are 8
-                    Picking up luggage, please stay where you are 9
+                    Si:{modalString}
                     </Box>
                 </Box>
             </Modal>
@@ -82,11 +73,11 @@ export function MyModal({ isOpen = false, onClose, modalString = ""}) {
     );
 }
 
-export function EmergencyModal({ isOpen = false }) {
+export function EmergencyModal({ isOpen }) {
     return (
         <>
             <Modal
-                open={false}
+                open={false}        // for debugging with HSR change to isOpen
                 // onClose={onClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
@@ -110,13 +101,13 @@ export function EmergencyModal({ isOpen = false }) {
     )
 }
 
-export function MicrophoneModal({ data = false}) {
+export function MicrophoneModal({ data }) {
 
 
     return (
         <>
             <Modal
-                open={false}
+                open={false}        // for debugging with HSR change to data
                 // onClose={onClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
@@ -167,7 +158,7 @@ export function ImageModal({ imageTopicName = " ", hostName = " "}) {
     return (
         <>
             <Modal
-                open={false}
+                open={false}        // for debugging with HSR change to isOpen
                 // onClose={onClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
