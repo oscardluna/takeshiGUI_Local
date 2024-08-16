@@ -1,14 +1,3 @@
-# takeshiGUI_Local
-GUI created with Next.js based on the repo of https://github.com/takeshi-pumas/catkin_extras/tree/main/src/erasers-app-v2 used in HSR robot of team Pumas (takeshi), with the purpose of run it locally with:
-```bash
-$ npm run dev
-
-```
-for debug purpose only
-
-
-#
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
